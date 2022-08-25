@@ -13,6 +13,7 @@ int Reverse::reverseDigit(int value){
     }
 }
 string Reverse::reverseString(string letters){
+    if (letters.length() <= 0) return NULL;
     static string reverse;
     if(letters.length()==0){
         return reverse;
